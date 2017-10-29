@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Login } from '../login/login';
-import { Signup } from '../signup/signup';
+import { SignupPage } from '../signup/signup';
 
 @Component({
     selector: 'page-bemvindo',
-    templateUrl: bemvindo.html',
+    templateUrl: 'bemvindo.html',
 })
 export class Bemvindo {
     constructor(public navCtrl: NavController) {
@@ -16,6 +16,6 @@ export class Bemvindo {
     }
 
     signup(){
-        this.navCtrl.push(Signup);
+        this.navCtrl.push(SignupPage);
     }
 }

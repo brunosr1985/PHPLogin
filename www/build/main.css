@@ -25678,3 +25678,20 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
+
+page-bemvindo #welcome {
+  background: #f4f4f4;
+}
+
+page-bemvindo #welcome h1 {
+  font-size: 52px;
+  margin-top: 50px;
+}
+
+page-bemvindo #welcome .marginTop {
+  margin-top: 150px;
+}
+
+page-bemvindo #welcome .logo {
+  height: 100px;
+}

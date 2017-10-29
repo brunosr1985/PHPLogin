@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { BemVindo } from "../pages/bemvindo/bemvindo";
+import { Bemvindo} from "../pages/bemvindo/bemvindo";
 import { Login } from "../pages/login/login";
-import { Signup } from "../pages/signup/signup";
+import {SignupPage} from "../pages/signup/signup";
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -23,8 +23,8 @@ import { SignaturePadModule } from 'angular2-signaturepad';
     ContactPage,
     HomePage,
     Login,
-    Signup,
-    BemVindo,
+    SignupPage,
+    Bemvindo,
     TabsPage
   ],
   imports: [
@@ -36,9 +36,9 @@ import { SignaturePadModule } from 'angular2-signaturepad';
     MyApp,
     AboutPage,
     ContactPage,
-    BemVindo,
+    Bemvindo,
     Login,
-    Signup,
+    SignupPage,
     HomePage,
     TabsPage
   ],
