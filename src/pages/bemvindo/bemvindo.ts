@@ -1,25 +1,21 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
+import { Login } from '../login/login';
+import { Signup } from '../signup/signup';
 
-/**
- * Generated class for the BemvindoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
-@IonicPage()
 @Component({
-  selector: 'page-bemvindo',
-  templateUrl: 'bemvindo.html',
+    selector: 'page-bemvindo',
+    templateUrl: bemvindo.html',
 })
-export class BemvindoPage {
+export class Bemvindo {
+    constructor(public navCtrl: NavController) {
+    }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    login(){
+        this.navCtrl.push(Login);
+    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad BemvindoPage');
-  }
-
+    signup(){
+        this.navCtrl.push(Signup);
+    }
 }
